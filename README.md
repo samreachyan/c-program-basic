@@ -1,4 +1,4 @@
-Lập trình C là ngôn ngữ cơ bản đầu tiến của lập trình viên và để thử tư duy giải thuật toán. 
+👍 Lập trình C là ngôn ngữ cơ bản đầu tiến của lập trình viên và để thử tư duy giải thuật toán. 🤭
 
 ## Lịch học của chúng ta: 
 1. C Introduce
@@ -8,6 +8,23 @@ Lập trình C là ngôn ngữ cơ bản đầu tiến của lập trình viên 
 5. C Programming Pointer
 6. C Programming String
 7. Structure and Union
+
+## Folder sử dụng github
+```
+├── lesson1 
+│   ├── file_name.c
+│   ├── file_name2.c
+│   └── homework [folder]
+│       ├── bai_tap.txt
+│       └── bai_tap.txt
+├── lesson2
+│   ├── file_name.c
+│   ├── file_name2.c
+│   └── homework [folder]
+│       ├── bai_tap.txt
+│       └── bai_tap.txt
+├── lesson.. 
+```
 
 ## Trang web có ích có thể nghiên cứu trước khóa học của chúng ta.
 1. programiz.com <i><b>Tìm hiểu lập trình</b></i> 

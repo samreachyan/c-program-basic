@@ -9,6 +9,10 @@
 6. C Programming String
 7. Structure and Union
 
+## Class Cover
+
+![IMG_20210327_142333](https://user-images.githubusercontent.com/32268364/112719135-d979c780-8f29-11eb-90d1-1226063f5fa2.jpg)
+
 ## Folder sử dụng github
 ```
 ├── lesson1 
@@ -27,12 +31,12 @@
 ```
 
 ## Trang web có ích có thể nghiên cứu trước khóa học của chúng ta.
-1. programiz.com <i><b>Tìm hiểu lập trình</b></i> 
+1. www.programiz.com <i><b>Tìm hiểu lập trình</b></i> 
 2. www.geeksforgeeks.org/  <i><b>thuật toán</b></i> 
-3. nguyenvanhieu.vn <i><b>tìm hiểu thuật toán từ cơ bản</b></i> 
-4. luyencode.net  <i><b>Bài luyện code</b></i> 
-5. dev.to , medium.com <i><b>đọc blog công nghệ</b></i> 
-6. github.com <i><b>quản trị code và tìm source codes</b></i>
+3. www.nguyenvanhieu.vn <i><b>tìm hiểu thuật toán từ cơ bản</b></i> 
+4. www.luyencode.net  <i><b>Bài luyện code</b></i> 
+5. www.dev.to , www.medium.com <i><b>đọc blog công nghệ</b></i> 
+6. www.github.com <i><b>quản trị code và tìm source codes</b></i>
 
 ## Cài đặt môi trường C++ cho ubuntu - linux 
 Install thứ viện g++ cho ubuntu 

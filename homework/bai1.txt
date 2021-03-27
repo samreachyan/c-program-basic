@@ -1,0 +1,13 @@
+1. input a, b
+   Enter a = [] (float)
+   Enter b = [] (float)
+2. Output: 
+    power of a = %f // a^2
+    power of b = %f
+    a + b = ..
+    a - b = ..
+    a * b = ..
+    a / b = ..
+    a % b = ..
+
+    getch(); conio.h

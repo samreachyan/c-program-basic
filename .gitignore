@@ -1,1 +1,7 @@
 .vscode
+*/*
+!*/homework
+!*/*.c
+!*/*.cpp
+!*/*.txt
+!*/*.cpp

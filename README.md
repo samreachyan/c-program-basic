@@ -87,6 +87,8 @@ Code::Blocks  https://www.codeblocks.org/downloads/
 
 Open directory folder and then right click in folder >> click on Open Terminal >> code . >> enter
 
+![Peek 2021-03-28 10-22](https://user-images.githubusercontent.com/32268364/112741457-286a4000-8fb0-11eb-8c3d-04a1ce7fb6ef.gif)
+
 Or open terminal
 ```
 Ctrl + Alt + T

@@ -1,0 +1,34 @@
+Input:
+    Enter operation: [] (char: + - * /)
+    Enter a = [] (number)
+    Enter b = [] (number)
+Output:
+    Result num1 * num2 = result 
+------------ Test1
+Enter operation: *
+Enter a = 3
+Enter b = 5
+
+Result 3 * 5 = 15
+------------ Test2
+Enter operation: +
+Enter a = 4
+Enter b = 5
+
+Result 4 + 5 = 9
+------------
+if (s == '+') {
+    result = a + b;
+}
+-------------
+if (+) {
+
+} else if (-) {
+
+} else if (*) {
+
+} else if (/) {
+
+} else {
+    Output: You input wrong operation. Bye!.
+}

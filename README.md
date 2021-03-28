@@ -1,13 +1,23 @@
-👍 Lập trình C là ngôn ngữ cơ bản đầu tiến của lập trình viên và để thử tư duy giải thuật toán. 🤭
+**C Program danh cho sinh viên CPC K65** 
 
-## Lịch học của chúng ta: 
-1. C Introduce
-2. C Flow Control
-3. C Functions
-4. C Programming Arrays
-5. C Programming Pointer
-6. C Programming String
-7. Structure and Union
+👍 Lập trình C là ngôn ngữ cơ bản đầu tiên của lập trình viên và để tư duy giải thuật toán. 🤭
+
+- [Lịch học của chúng ta](#lịch-học-của-chúng-ta)
+- [Class Cover](#class-cover)
+- [Folder sử dụng github](#folder-sử-dụng-github)
+- [Trang web có ích có thể nghiên cứu trước khóa học của chúng ta.](#trang-web-có-ích-có-thể-nghiên-cứu-trước-khóa-học-của-chúng-ta)
+- [Cài đặt môi trường C++ cho ubuntu - linux](#cài-đặt-môi-trường-c-cho-ubuntu---linux)
+- [Cài đặt C++ cho windows](#cài-đặt-c-cho-windows)
+- [Sử dụng VS Code trong ubuntu](#sử-dụng-vs-code-trong-ubuntu)
+- [Contact](#contact)
+## Lịch học của chúng ta 
+1. [C Introduce](#c-introduce)
+2. [C Flow Control](#c-flow-control)
+3. [C Functions](#c-functions)
+4. [C Programming Arrays](#c-programming-arrays)
+5. [C Programming Pointer](#c-programming-pointer)
+6. [C Programming String](#c-programming-string)
+7. [Structure and Union](#structure-and-union)
 
 ## Class Cover
 
@@ -59,10 +69,10 @@ $ sudo apt-get update
 ```
 $ sudo apt-get install code 
 ```
-Sau do cài plugin cho môi trường phát triển c/c++ trong vs code. 
+Sau đó cài plugin cho môi trường phát triển c/c++ trong vs code. 
 ```
-C/C++ Compile RUN 
-C/C++ Intellgence 
+C/C++ Compile Run 
+C/C++ Intelligence 
 ```
 
 ## Cài đặt C++ cho windows 
@@ -73,7 +83,33 @@ Dev C++ https://sourceforge.net/projects/orwelldevcpp/
 Code::Blocks  https://www.codeblocks.org/downloads/
 ```
 
+## Sử dụng VS Code trong ubuntu 
+
+Open directory folder and then right click in folder >> click on Open Terminal >> code . >> enter
+
+Or open terminal
+```
+Ctrl + Alt + T
+```
+Browse to folder working on 
+```
+$ cd folder_name_working 
+```
+Example: 
+```
+$ cd Documents/Github/C/
+```
+Open to VS Code by command
+```
+$ code .
+```
+
+Compile and RUN C/C++ by key shortcut. (Installed C/C++ Compile Run)
+```
+F7
+```
+
 ## Contact 
-Chúng ta có thể làm quen với nhau bắng gmail: samreachyan@gmail.com và [Facebook](https://fb.me/yan.samreach "Messager").
+Chúng ta có thể làm quen qua gmail: samreachyan@gmail.com và [Facebook](https://fb.me/yan.samreach "Yan Samreach").
 
 Chúc các bạn học tập thành công!! ❤️

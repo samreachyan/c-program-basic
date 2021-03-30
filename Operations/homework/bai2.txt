@@ -1,0 +1,35 @@
+---------------------------------------
+1. សរសេរកម្មវិធី ដែលត្រូវបញ្ចូលលេខចំនួនគត់​ ២ លេខ។ បន្ទាប់មក បង្ហាញ់លើអេក្រង់ផលបូកនិងមធ្យមនៃ២ចំនួននោះ។
+Example:
+    input: 3 8
+    output: 11 5.50
+
+----------------------------------------
+2. Viết chương trình C xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ. Nếu:
+
+Điểm trung bình >= 9.0 là hạng A.
+Điểm trung bình >=7.0 và < 9.0 là hạng B
+Điểm trung bình >=5.0 và < 7.0 là hạng C
+Điểm trung bình <5.0 là hạng F
+
+Điểm trunh bình = điểm giữa kỳ * 0.3 + điểm cuối kỳ & 0.7 
+
+Example: 
+    input: 
+    Diem giua ky: 5
+    Diem cuoi ky: 7
+
+    TrungBinh = 5 * 0.3 + 7 * 0.7 = ..
+    
+---------------------------------------
+3. សរសេរកម្មវិធីមួយសម្រាប់អ្នកប្រើអាចបញ្ចូលលេខគត់ ចំនួន៣លេខ រួចបង្ហាញ់លើអេក្រង់ចំនួនដែលធំជាងគេ។ 
+Example: 
+    input: 2 34 6
+    out: The biggest number is 34
+
+    input 23 6 8
+    output: The biggest number is 23
+
+    input: 4 8 19
+    output: The biggest number is 19
+----------------------------------------

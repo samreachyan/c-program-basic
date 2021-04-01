@@ -1,5 +1,5 @@
 # គ្រប់គ្រងលក្ខខ័ណ
-[<< Prev >>](https://github.com/samreachyan/c-program-basic/tree/main/Condition "Previous") | [<< Next >>](https://github.com/samreachyan/c-program-basic/tree/main/Loop "Next")
+[<< Prev >>](https://github.com/samreachyan/c-program-basic/tree/main/Operations "Previous") | [<< Next >>](https://github.com/samreachyan/c-program-basic/tree/main/Loop "Next")
 
 ការគ្រប់គ្រងលក្ខខ័ណមានច្រើន ធម្មតាយើងរៀនដំបូងៗច្រើនជួប `if else ` ហើយថ្ងៃនេះយើងនឹង សិក្សាពីវាគ្រប់លក្ខខ័ណ និង ថែមផ្នែកមួយចំនួន។ 
 - [គ្រប់គ្រងលក្ខខ័ណ](#គ្រប់គ្រងលក្ខខ័ណ)

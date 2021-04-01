@@ -110,8 +110,8 @@ if (condition1) {
     } else {
         code;
     }
-} else if {
-    if (condtion2.1){
+} else if (condition2) {
+    if (condition2.1){
         code;
     }
 } else {

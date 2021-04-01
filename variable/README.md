@@ -12,7 +12,7 @@
 void main() // ការប្រកាសមុខងាររបស់កម្មវីធីដោយប្រើ void main() របស់ function
 {
     // statement;
-    // code
+    // code;
     // សម្រាប់កន្លែងនេះ គឺសម្រាប់ធ្វើការសរសេរកូដឱ្យកុំព្យូទ័រ ដែលនៅចុងបន្ទាត់ត្រូវមានសញ្ញា ";"
 }
 ```
@@ -42,7 +42,7 @@ void main() {
 ```
 int A;
 int a;
-int a1
+int a1;
 int _a;
 float abc;
 double num;

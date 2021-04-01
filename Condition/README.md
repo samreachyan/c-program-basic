@@ -1,5 +1,5 @@
 # គ្រប់គ្រងលក្ខខ័ណ
-[<< Prev >>](https://github.com/samreachyan/c-program-basic/tree/main/Condition "Previous") | [<< Next >>](https://github.com/samreachyan/c-program-basic/tree/main/Loops "Next")
+[<< Prev >>](https://github.com/samreachyan/c-program-basic/tree/main/Condition "Previous") | [<< Next >>](https://github.com/samreachyan/c-program-basic/tree/main/Loop "Next")
 
 ការគ្រប់គ្រងលក្ខខ័ណមានច្រើន ធម្មតាយើងរៀនដំបូងៗច្រើនជួប `if else ` ហើយថ្ងៃនេះយើងនឹង សិក្សាពីវាគ្រប់លក្ខខ័ណ និង ថែមផ្នែកមួយចំនួន។ 
 - [គ្រប់គ្រងលក្ខខ័ណ](#គ្រប់គ្រងលក្ខខ័ណ)
@@ -7,7 +7,7 @@
   - [if else - ប្រសិនបើ បើមិនដូច្នោះ](#if-else---ប្រសិនបើ-បើមិនដូច្នោះ)
   - [if - else if - else - ប្រសិនបើ ប្រសិនបើ បើមិនដូច្នោះ](#if---else-if---else---ប្រសិនបើ-ប្រសិនបើ-បើមិនដូច្នោះ)
   - [Nest Condition - លក្ខខ័ណក្នុងលក្ខខ័ណ](#nest-condition---លក្ខខ័ណក្នុងលក្ខខ័ណ)
-  - [Swtich - លក្ខខ័ណច្រើនបែប](#swtich---លក្ខខ័ណច្រើនបែប)
+  - [Switch - លក្ខខ័ណច្រើនបែប](#switch---លក្ខខ័ណច្រើនបែប)
 
 ក្នុងមេរៀននេះដែរ យើងត្រូវឆ្លាតវៃក្នុងការគណនា (+ - * / %) និងប្រើប្រាស់កត្តវិទ្យា (&& || !) ចាំបាច់សម្រាប់ដោះស្រាយតាមករណីនិមួយៗ។ 
 
@@ -140,8 +140,8 @@ void main() {
 }
 ```
 
-## Swtich - លក្ខខ័ណច្រើនបែប
-Swtich ក៏ឃើញថាត្រូវបានប្រើច្រើនណាស់ដែរក្នុងភាសានិមួយៗ។ 
+## Switch - លក្ខខ័ណច្រើនបែប
+Switch ក៏ឃើញថាត្រូវបានប្រើច្រើនណាស់ដែរក្នុងភាសានិមួយៗ។ 
 
 ```
 switch(variable) {

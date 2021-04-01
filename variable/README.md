@@ -1,4 +1,6 @@
 # Introduce C Programming 
+[<< Prev >>](https://github.com/samreachyan/c-program-basic, "Previous") | [Next](https://github.com/samreachyan/c-program-basic/tree/main/Operations "<< Next >>")
+
 ក្នុងមេរៀនរៀន C Programming អ្វីត្រូវយល់សម្រាប់ដំបូងគឺ printf("អក្សរនឹងត្រូវបង្ហាញលើអេក្រង់"); និង scanf();
 
 ## ណែនាំទម្រង់ភាសា

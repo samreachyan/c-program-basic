@@ -11,13 +11,14 @@
 - [Sử dụng VS Code trong ubuntu](#sử-dụng-vs-code-trong-ubuntu)
 - [Contact](#contact)
 ## Lịch học của chúng ta 
-1. [C Introduce](#c-introduce)
-2. [C Flow Control](#c-flow-control)
-3. [C Functions](#c-functions)
-4. [C Programming Arrays](#c-programming-arrays)
-5. [C Programming Pointer](#c-programming-pointer)
-6. [C Programming String](#c-programming-string)
-7. [Structure and Union](#structure-and-union)
+1. [C Introduce](https://github.com/samreachyan/c-program-basic/blob/main/variable "C Introduce")
+2. [C Operation](https://github.com/samreachyan/c-program-basic/blob/main/Operations "C Operation")
+3. [C Flow Control](https://github.com/samreachyan/c-program-basic/blob/main/Condition "C Condition")
+4. [C Functions](#c-functions)
+5. [C Programming Arrays](#c-programming-arrays)
+6. [C Programming Pointer](#c-programming-pointer)
+7. [C Programming String](#c-programming-string)
+8. [Structure and Union](#structure-and-union)
 
 ## Class Cover
 

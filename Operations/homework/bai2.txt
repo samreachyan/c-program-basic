@@ -46,3 +46,20 @@ Example:
     output: d
 ស្រាវជ្រាវពីការប្រើ ascii ដើម្បីគណនា
 ----------------------------------------
+5. សរសេរកម្មវិធីសម្រាប់បង្ហាញ ថ្ងៃដោយប្រើលេខ។
+    1. Monday
+    2. Tuesday
+    3. Wednesday
+    4. Thursday
+    5. Friday
+    6. Saturday
+    7. Sunday
+    ដោយប្រើ switch ដើម្បីដោះស្រាយ។ 
+input: 
+    Enter number : 2
+    => Tuesday
+    -----------
+    Enter number : 5
+    => Friday
+    -------
+    Input invalid.

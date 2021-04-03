@@ -1,0 +1,19 @@
+1. សរសេរកម្មវិធីសម្រាប់គណនា​ រកថ្ងៃខែឆ្នាំកំណើតអ្នកប្រើប្រាស់បានបញ្ចូលត្រឹមត្រូវដែរឬទេ។ 
+Example:
+    input: day: 29, month: 02, year 2021
+    output: invalide date.
+
+    input: day: 29 month: 02 year 2020
+    output: your date valide.
+
+    input: day 31 month 05 year 2021
+    input: invalide date.
+
+2. សរសេរកម្មវិធីសម្រាប់គណនា​រកចំនួនថ្ងៃក្នុងមួយឆ្នាំ ដែលគិតថ្ងៃខែកំណើតរបស់អ្នក។
+Example: 
+    input: (day month year): 7 03 2020
+    output: 31 + 29 + 7 = 67 days.
+
+    input: 8 4 2021
+    output: 31 + 28 + 31 + 8 = 98 days.
+

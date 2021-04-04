@@ -16,7 +16,7 @@
 3. [C Flow Control](https://github.com/samreachyan/c-program-basic/blob/main/Condition "C Condition")
 4. [C Loop](https://github.com/samreachyan/c-program-basic/blob/main/Loop)
 5. [C Function](https://github.com/samreachyan/c-program-basic/blob/main/Function)
-6. [C Programming Arrays](#c-programming-arrays)
+6. [C Programming Arrays](https://github.com/samreachyan/c-program-basic/blob/main/Array)
 7. [C Programming Pointer](#c-programming-pointer)
 8. [C Programming String](#c-programming-string)
 9. [Structure and Union](#structure-and-union)

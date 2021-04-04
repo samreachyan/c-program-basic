@@ -19,7 +19,7 @@ Example:
         arrayB[0] = 1
         arrayB[1] = 3
         arrayB[2] = 7
-
+    output: 
         array[0] = 3+1 = 4
         array[1] = 5+3 = 8
         array[2] = 7+4 = 11
@@ -31,6 +31,6 @@ Example:
         array[1] = 6
         array[2] = 4
         array[3] = 1
-
+    output:
         sort: 1 3 4 6
 

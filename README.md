@@ -17,9 +17,10 @@
 4. [C Loop](https://github.com/samreachyan/c-program-basic/blob/main/Loop)
 5. [C Function](https://github.com/samreachyan/c-program-basic/blob/main/Function)
 6. [C Programming Arrays](https://github.com/samreachyan/c-program-basic/blob/main/Array)
-7. [C Programming Pointer](#c-programming-pointer)
-8. [C Programming String](#c-programming-string)
-9. [Structure and Union](#structure-and-union)
+7. [C Programming Pointer](https://github.com/samreachyan/c-program-basic/blob/main/Pointer)
+8. [C Programming String](https://github.com/samreachyan/c-program-basic/blob/main/String)
+9. [C Programming Structure](https://github.com/samreachyan/c-program-basic/blob/main/Structure)
+10. [C Programming File](https://github.com/samreachyan/c-program-basic/blob/main/File)
 
 ## Class Cover
 

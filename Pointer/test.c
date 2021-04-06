@@ -1,12 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void main() {
-   int x[4];
-   int i;
+    int *ptr, i , n1, n2;
+    printf("Enter size: ");
+    scanf("%d", &n1);
 
-   for(i = 0; i < 4; ++i) {
-      printf("&x[%d] = %p\n", i, &x[i]);
-   }
+    ptr = (int*) malloc(n1 * sizeof(int));
 
-   printf("Address of array x: %p", x);
+    printf("Addresses of previously allocated memory: \n");
+    for(i = 0; i < n1; ++i)
+         printf("%u\n",ptr + i);
+
+    printf("\nEnter the new size: ");
+    scanf("%d", &n2);
+
+    // rellocating the memory
+    ptr = realloc(ptr, n2 * sizeof(int));
+
+    printf("Addresses of newly allocated memory: \n");
+    for(i = 0; i < n2; ++i)
+         printf("%u\n", ptr + i);
+  
+    free(ptr);
 }

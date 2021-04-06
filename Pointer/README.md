@@ -1,5 +1,7 @@
 # Pointer 
 
+[<< Prev >>](https://github.com/samreachyan/c-program-basic/tree/main/Array "Previous") | [<< Next >>](https://github.com/samreachyan/c-program-basic/tree/main/String "Next")
+
 អញ្ញាត Pointer គឺជាអញ្ញាតមួយដែលទូទៅត្រូវបានគេប្រើសម្រាប់ផ្ទុកតម្លៃ Address (ទីតាំង) របស់អញ្ញាតផ្សេងទៀតដែលស្ថិតនៅលើ RAM។ Pointer អាចផ្ទុកតម្លៃ Address របស់អញ្ញាតដែលមានប្រភេទទិន្នន័យដូចគ្នាតែមួយ។ 
 
 ## ការប្រកាសអថេរ Pointer 
@@ -200,3 +202,196 @@ void main() {
 }
 ```
 
+### ឧទាហរណ៍
+```
+#include <stdio.h>
+void main() {
+    int x[5] = {1, 2, 3, 4, 5};
+    int* ptr;
+
+    // ptr បានចាប់យកទីតាំង x[2]
+    ptr = &x[2]; 
+
+    printf("*ptr = %d \n", *ptr);   // 3
+    printf("*(ptr+1) = %d \n", *(ptr+1)); // 4
+    printf("*(ptr-1) = %d", *(ptr-1));  // 2
+}
+```
+
+## Pointer ប្រើប្រាស់ក្នុង Function
+ក្នុងចំនុចនេះយើងនឹងសិក្សាពីការបោះទីតាំងរបស់អថេរទៅក្នុង function ។
+
+```
+#include <stdio.h>
+void swap(int* n1, int* n2)
+{
+    int temp;
+    temp = *n1;
+    *n1 = *n2;
+    *n2 = temp;
+}
+
+void main() {
+    int num1 = 5, num2 = 10;
+
+    // address num1, num2
+    swap( &num1, &num2);
+
+    printf("num1 = %d\n", num1);
+    printf("num2 = %d", num2);
+}
+```
+
+```
+#include <stdio.h>
+
+void addOne(int* ptr) {
+    (*ptr)++; // adding 1 to *ptr
+}
+
+void main() {
+    int* p, i = 10;
+    p = &i;
+    addOne(p);
+
+    printf("%d", *p); // 11
+}
+```
+
+## Dynamic Memory Allocation
+មេរៀននេះបង្ហាញពីការប្រើប្រាស់ memory ពេលយើងប្រើប្រាស់ array យើងត្រូវប្រកាសជាមួយទំហំរបស់អថេរដែលវាត្រូវប្រើប្រាស់ memory ហើយពេលខ្លះយើងប្រើប្រាស់តិចហើយប្រកាសច្រើនពេក នោះវាធ្វើការខ្ជះខ្ជាយ។ ដូច្នេះ យើងត្រូវប្រើចំនុចនេះដើម្បី កុំឱ្យប្រើប្រាស់ខាត ហើយប្រើប្រាស់តាមចំនួនត្រូវការ។ ពេលយើងប្រើប្រាស់រួច យើងអាចលុបវាចោលដើម្បីម៉ាស៊ីនរបស់យើងស្រាល់ អាចធ្វើការមុខងារផ្សេងទៀត។ 
+
+### Malloc
+
+មុខងារ `malloc ()` រក្សាទុកការចងចាំនៃចំនួនបៃដែលបានបញ្ជាក់។ ហើយវាត្រឡប់ទ្រនិចនៃការចាត់ទុកជាមោឃៈដែលអាចត្រូវបានគេចង្អុលទៅទម្រង់នៃទម្រង់ណាមួយ។
+
+```
+int * ptr = (castType*) malloc(size);
+ឈ្មោះអថេរ = (ប្រភេទទិន្នន័យ *) malloc(ទំហំត្រូវប្រើ);
+
+int * ptr = (int *) malloc(10 * size(int));
+ptr = មាន int ចំនួន១០ ឬម្យ៉ាងទៀត int ptr[10];
+```
+
+### Calloc 
+
+មុខងារ `malloc ()` បែងចែកអង្គចងចាំហើយទុកអង្គចងចាំដោយមិនចាំបាច់ចំណែកមុខងារ `calloc ()` បែងចែកអង្គចងចាំហើយចាប់ផ្តើមប៊ីតទាំងអស់ទៅសូន្យ។
+
+```
+int * ptr = (castType*)calloc(n, size);
+ឈ្មោះអថេរ = (ប្រភេទទិន្នន័យ *) malloc(ចំនួនប្រើ, ទំហំប្រភេទទិន្នន័យ);
+
+int * prr = (int *) calloc (20, sizeof(int));
+```
+
+### free() - លុប memory pointer 
+
+```
+free(ptr);
+```
+
+ឧទាហរណ៍៖
+
+```
+// Program to calculate the sum of n numbers entered by the user
+
+#include <stdio.h>
+#include <stdlib.h> // malloc(), calloc(), realloc()
+
+void main() {
+    int n, i, *ptr, sum = 0;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    ptr = (int*) malloc(n * sizeof(int));
+ 
+    // if memory cannot be allocated
+    if(ptr == NULL)                     
+    {
+        printf("Error! memory not allocated");
+        exit(1);
+    }
+
+    printf("Enter elements: ");
+    for(i = 0; i < n; ++i)
+    {
+        scanf("%d", ptr + i);
+        sum += *(ptr + i);
+    }
+
+    printf("Sum = %d", sum);
+  
+    // free memory
+    free(ptr);
+}
+```
+
+```
+// Program to calculate the sum of n numbers 
+#include <stdio.h>
+#include <stdlib.h>
+
+void main() {
+    int n, i, *ptr, sum = 0;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    ptr = (int*) calloc(n, sizeof(int));
+    if(ptr == NULL)
+    {
+        printf("Error! memory not allocated.");
+        exit(1);
+    }
+
+    printf("Enter elements: ");
+    for(i = 0; i < n; ++i)
+    {
+        scanf("%d", ptr + i);
+        sum += *(ptr + i);
+    }
+
+    printf("Sum = %d", sum);
+    free(ptr);
+}
+```
+
+### Realloc 
+ប្រសិនបើអង្គចងចាំដែលបានបម្រុងទុកតាមលក្ខណៈឌីជីថលមិនគ្រប់គ្រាន់ឬច្រើនជាងតម្រូវការអ្នកអាចផ្លាស់ប្តូរទំហំនៃអង្គចងចាំដែលបានបម្រុងទុកពីមុនដោយប្រើមុខងារ `realloc ()` ។
+
+```
+int * ptr = realloc(ptr, x);
+// x ជាចំនួនទំហំថ្មីដែលត្រូវថែមទៅ ptr
+```
+
+ឧទាហរណ៍៖
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+void main() {
+    int *ptr, i , n1, n2;
+    printf("Enter size: ");
+    scanf("%d", &n1);
+
+    ptr = (int*) malloc(n1 * sizeof(int));
+
+    printf("Addresses of previously allocated memory: \n");
+    for(i = 0; i < n1; ++i)
+         printf("%u\n",ptr + i);
+
+    printf("\nEnter the new size: ");
+    scanf("%d", &n2);
+
+    // rellocating the memory
+    ptr = realloc(ptr, n2 * sizeof(int));
+
+    printf("Addresses of newly allocated memory: \n");
+    for(i = 0; i < n2; ++i)
+         printf("%u\n", ptr + i);
+  
+    free(ptr);
+}
+```
+
+ចប់ 😙 ផលលំបាកអ្នករៀនដំបូង មិនសូវចាប់បានពី address, value បន្ទាប់មកការប្រើប្រាស់ទៅក្នុង function ទៀតពេលខ្លះងាយច្រឡំគ្នា។ តែព្យាយាមអនុវត្តច្រើននឹងយល់ច្បាស់ពីវាហើយ។ 

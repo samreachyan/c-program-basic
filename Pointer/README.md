@@ -153,3 +153,50 @@ p = &c;
 ```
 
 ## ប្រើប្រាស់ Pointer ជាមួយ Array
+
+Pointer វាមានទំនាក់ទំនងទៅនឹង Array ដែរមើលទៅស្រដៀងគ្នាយើងអាចសិក្សាមិនពិបាកយល់។ យើងអាចមើលគំរូខាងក្រោមវាស្រដៀងគ្នា។
+
+```
+#include <stdio.h>
+void main() {
+   int x[4];
+   int i;
+
+   for(i = 0; i < 4; ++i) {
+      printf("&x[%d] = %p\n", i, &x[i]);
+   }
+
+   printf("Address of array x: %p", x);
+}
+```
+Output: 
+```
+&x[0] = 0x7ffe1dce9e10
+&x[1] = 0x7ffe1dce9e14
+&x[2] = 0x7ffe1dce9e18
+&x[3] = 0x7ffe1dce9e1c
+Address of array x: 0x7ffe1dce9e10
+```
+យើងអាចមើលឃើញថា ការបង្ហាញទីតាំង address ក័ត្រូវបើសញ្ញា `&x[0]` ដូចគ្នា `x` បើចង់បានតម្លៃនៃ index `x[0]` ត្រូវបើ `*x`
+- យើងអាចសរសេរទីតាំង address  `&x[1]` ប្រើ `x+1` និងតម្លៃ `x[1]` ប្រើសញ្ញា `*(x+1)`
+- យើងអាចសរសេរទីតាំង address  `&x[2]` ប្រើ `x+2` និងតម្លៃ `x[2]` ប្រើសញ្ញា `*(x+2)`
+- យើងអាចសរសេរទីតាំង address  `&x[i]` ប្រើ `x+i` និងតម្លៃ `x[i]` ប្រើសញ្ញា `*(x+i)`
+
+### ឧទាហរណ៍ 
+
+```
+#include <stdio.h>
+void main() {
+  int i, x[6], sum = 0;
+  printf("Enter 6 numbers: ");
+  for(i = 0; i < 6; ++i) {
+  //  scanf("%d", &x[i]);
+      scanf("%d", x+i);
+
+  //  sum += x[i]
+      sum += *(x+i);
+  }
+  printf("Sum = %d", sum);
+}
+```
+

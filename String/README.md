@@ -110,3 +110,25 @@ void main() {
 - `strcmp()` ប្រៀបធៀបអក្សរពីរអថេរ បើដូចគ្នាគី 0 ខុសគ្នាគឺ 1
 - `strcat()` សម្រាប់បង្ហាញអក្សរក្នុងខ្លនវា 
 
+## Pointer String បង្កើត Function
+
+```
+#include <stdio.h>
+
+char * getString() {
+    int size = 5;
+    char *str = (char *) malloc (sizeof(char)*size); 
+    *(str+0) = 'H';
+    *(str+1) = 'e'; 
+    *(str+2) = 'l'; 
+    *(str+3) = 'l'; 
+    *(str+4) = 'o'; 
+     
+    return str; 
+}    
+void main() {
+    printf("%s \n", getString());
+}
+```
+
+បន្តមើលមេរៀនថ្មី 😘 [Structure](https://github.com/samreachyan/c-program-basic/blob/main/File)

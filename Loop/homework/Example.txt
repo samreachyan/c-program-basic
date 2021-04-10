@@ -4,6 +4,9 @@ Example:
     => test1
     input: 2 4
     output: The same sign.
+    => test1
+    input: -2 -9
+    output: The same sign.
     => test2
     input: 3 -2
     output: Not the same sign.

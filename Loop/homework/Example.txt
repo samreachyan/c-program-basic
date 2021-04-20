@@ -52,3 +52,19 @@ Example:
     input: 183
     input: 8
 
+10. 
+Example:
+    input: n = 4
+    output:     1
+                2 3 
+                4 5 6
+                7 8 9 10
+
+11. 
+Example:
+    input: n = 4
+    output:     1 2 3 4
+                1 2 3 4
+                1 2 3 4
+                1 2 3 4
+
